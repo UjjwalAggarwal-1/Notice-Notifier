@@ -1,0 +1,4 @@
+__pycache__/
+v1/my_secrets.py
+*.pem
+*.txt
