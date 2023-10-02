@@ -1,4 +1,5 @@
-from my_secrets import NEW_LIST, NO_BOLDIA, YES_BOLDIA
+from my_secrets import NO_BOLDIA, YES_BOLDIA, temp_list
+from full_list import NEW_LIST
 
 if __name__ == "__main__":
 
@@ -14,16 +15,20 @@ if __name__ == "__main__":
         print('all are of same length\n')
 
 
-    print("no's :",len(set(NO_BOLDIA)), len(NO_BOLDIA), set(NEW_LIST).intersection(NO_BOLDIA))
+    print("no's :",len(set(NO_BOLDIA)), len(NO_BOLDIA), len(set(NEW_LIST).intersection(NO_BOLDIA)))
     print("yes's :",len(set(YES_BOLDIA)),len(YES_BOLDIA), len(set(NEW_LIST).intersection(set(YES_BOLDIA))))
     print()
+    
+    print("full list - no responses : ", len(temp_list))
     # d = {}
     # for i in YES_BOLDIA:
     #     d[i] = d.get(i, 0) + 1
     # print(d)
 
-    NEW_LIST_2 = list(set(NEW_LIST) - (set(STUDENT_LIST) - set(NO_BOLDIA)))
-    print(len(NEW_LIST_2))
+
+###
+    # NEW_LIST_2 = list(set(NEW_LIST) - (set(STUDENT_LIST) - set(NO_BOLDIA)))
+    # print(len(NEW_LIST_2))
 
     # print(len(set(STUDENT_LIST)), len(STUDENT_LIST))
 

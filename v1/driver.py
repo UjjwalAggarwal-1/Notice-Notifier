@@ -7,7 +7,7 @@ from datetime import datetime
 
 if __name__ == "__main__":
 
-    the_recepient_list_being_used = env.ME_LIST
+    the_recepient_list_being_used = env.temp_list
 
     if not check():
         # error printed through check function

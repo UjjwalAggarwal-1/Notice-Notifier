@@ -34,7 +34,7 @@ class TopicParser:
         content = soup.find("div",class_="content")
         str_content = str(content)
         
-        form_message = ""#"<br><i> would 💖 it if you could leave a <a href = 'https://forms.gle/rizq81bBCLhMfxKG6'>feedback</a></i>"
+        form_message = "<br><br><i> would 💖 it if you could leave a <a href = 'https://forms.gle/rizq81bBCLhMfxKG6'>feedback</a></i>"
 
         self.html = "<html><body>"+str_content+form_message+"</body></html>"
         self.remove_unwanted_tags()
